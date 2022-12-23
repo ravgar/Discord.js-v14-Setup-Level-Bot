@@ -1,4 +1,41 @@
-const { Client } = require("discord.js");
+const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
+const mongoose = require('mongoose');
+const { bgBlue, black, green } = require("chalk");
+const fs = require('fs');
+const { glob } = require("glob");
+const { promisify } = require("util");
+const globPromise = promisify(glob);
+const { Punitives } = require("../Settings/Schemas")
+
+class ravgar extends Client {
+    constructor(options) {
+        super({
+            options,
+            intents: [
+                GatewayIntentBits.Guilds,
+                GatewayIntentBits.GuildMembers,
+                GatewayIntentBits.GuildEmojisAndStickers,
+                GatewayIntentBits.GuildIntegrations,
+                GatewayIntentBits.GuildWebhooks,
+                GatewayIntentBits.GuildInvites,
+                GatewayIntentBits.GuildVoiceStates,
+                GatewayIntentBits.GuildPresences,
+                GatewayIntentBits.GuildMessages,
+                GatewayIntentBits.GuildMessageReactions,
+                GatewayIntentBits.GuildMessageTyping,
+                GatewayIntentBits.DirectMessages,
+                GatewayIntentBits.DirectMessageReactions,
+                GatewayIntentBits.DirectMessageTyping,
+                GatewayIntentBits.MessageContent
+            ],
+            partials: [
+                Partials.Channel,
+                Partials.Message,
+                Partials.User,
+                Partials.GuildMember,
+                Partials.Reaction
+            ]
+        })
 const client = new Client({ intents: ["Guilds"] });
 
 client.config = require("./config.json")
