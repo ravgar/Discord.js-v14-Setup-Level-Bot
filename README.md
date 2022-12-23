@@ -5,4 +5,4 @@
 ![Ekran görüntüsü 2022-12-23 151031](https://user-images.githubusercontent.com/97904458/209340210-0102e047-557d-4979-be07-90d6c73d876f.png)
 ![Ekran görüntüsü 2022-12-23 141230](https://user-images.githubusercontent.com/97904458/209340236-5251086d-0a1e-4406-99fb-a285dfa6397f.png)
 
-# Bot işlerine fazla girmiyorum altyapılarımı 2 arkadaş satın aldı sonra ordan burda görüpte DM de taramalı tüfek gibi coşmayın.
+# 20 Starda Botun Hepsi Yüklenilecektir.
