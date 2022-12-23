@@ -52,4 +52,11 @@ const { joinVoiceChannel } = require("@discordjs/voice");
       selfMute: true
     });
 })  
-
+if (this.MongoURI) {
+            await mongoose.connect(this.MongoURI, {
+                useNewUrlParser: true,
+                useUnifiedTopology: true
+            }).then(async (a) => {
+                this._logger.log("MongoDB Bağlantısı Başarıyla Kuruldu.", "mongodb")
+            }
+                   
