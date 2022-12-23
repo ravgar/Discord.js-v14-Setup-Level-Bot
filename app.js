@@ -6,7 +6,8 @@ const { glob } = require("glob");
 const { promisify } = require("util");
 const globPromise = promisify(glob);
 const { Punitives } = require("../Settings/Schemas")
-
+const client = new Client({ intents: ["Guilds"] });
+client.config = require("./config.json")
 class ravgar extends Client {
     constructor(options) {
         super({
@@ -36,11 +37,7 @@ class ravgar extends Client {
                 Partials.Reaction
             ]
         })
-const client = new Client({ intents: ["Guilds"] });
-
-client.config = require("./config.json")
 client.login(client.config.token).then( () => {
-client.user.setActivity(`ravgar was here!`);
 console.log(`${client.user.username} Başarıyla Giriş Yaptı!`);
 })  
 const { joinVoiceChannel } = require("@discordjs/voice");
