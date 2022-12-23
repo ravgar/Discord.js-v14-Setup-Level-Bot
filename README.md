@@ -1,2 +1,2 @@
-# v13-level-bot
-MongoDB Üzerine Kurulmuş Setuplu Basit Level Sistemi Botu.
+# MongoDb Üzerine Kurulmuş Setuplu Basit Bir Level Sistemi Botudur Geliştirilmesi 20 Stardan Sonra Size Bırakılmıştır.
+
